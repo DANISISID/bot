@@ -9,7 +9,8 @@ import os
 # ============================================================
 #  CONFIGURACAO
 # ============================================================
-TOKEN = "MTQ5NzE3NjIyODk3NTYxMjAyNA.Go0UoF.S7IMHeehPOwJ1qUQdf9PkPP2rXaOHB8uhHq_ws"
+import os
+TOKEN = os.environ.get("TOKEN")
 
 intents = discord.Intents.default()
 intents.message_content = True
